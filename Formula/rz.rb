@@ -12,9 +12,9 @@
 class Rz < Formula
   desc "Keyboard-first window placement: grids, workspaces and hints"
   homepage "https://github.com/rinkans/rz-releases"
-  url "https://github.com/rinkans/rz-releases/releases/download/v0.1.1/rz-macos-universal.tar.gz"
-  version "0.1.1"
-  sha256 "100b1c837b71929e8bacfa14387cbef6e3f2f2e13a2e6272283c8f24b58c2877"
+  url "https://github.com/rinkans/rz-releases/releases/download/v0.1.2/rz-macos-universal.tar.gz"
+  version "0.1.2"
+  sha256 "9c5e08479a4487a600812dc5cc5904b866f52bb9664d8bcfb8a087fef7891e02"
 
   depends_on :macos
 
