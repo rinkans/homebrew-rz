@@ -10,11 +10,11 @@
 # internet, and macOS then refuses rz (it isn't notarized). Homebrew
 # updates rz (brew upgrade), so rz's own updater stays off for this copy.
 class Rz < Formula
-  desc "Keyboard-first window placement: CapsLock grids, workspaces and hints"
+  desc "Keyboard-first window placement: grids, workspaces and hints"
   homepage "https://github.com/rinkans/rz-releases"
-  url "https://github.com/rinkans/rz-releases/releases/download/v0.1.0/rz-macos-universal.tar.gz"
-  version "0.1.0"
-  sha256 "a667550d9ab384d3045609aa3fe2c712e4107762a061b7f7cc0fba50e2bbfe1c"
+  url "https://github.com/rinkans/rz-releases/releases/download/v0.1.1/rz-macos-universal.tar.gz"
+  version "0.1.1"
+  sha256 "100b1c837b71929e8bacfa14387cbef6e3f2f2e13a2e6272283c8f24b58c2877"
 
   depends_on :macos
 
@@ -47,8 +47,10 @@ class Rz < Formula
       Then allow it to place windows: System Settings > Privacy & Security >
       Accessibility > switch on rz. macOS asks the first time rz starts.
 
-      CapsLock becomes rz's key: hold it alone to see every shortcut. The
-      menu bar shows rz while it runs.
+      § (left of 1) becomes rz's key: hold it alone to see every shortcut,
+      tap it to type §. On a keyboard without §, put hyper = "capslock"
+      under [general] in ~/.config/rz/config.toml. The menu bar shows rz
+      while it runs.
     EOS
   end
 
